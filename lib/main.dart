@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fastrest/page/mapa.dart';
+import 'package:fastrest/page/reserva.dart';
 import 'package:fastrest/page/splaash_page.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
@@ -122,7 +123,8 @@ class _MyAppState extends State<MyApp> {
               "/settings": (context) => SettingPage(
                     currentUsuario: usuarios,
                   ),
-              "/mapa": (context) => MapaPage(Mapa: ""),
+              "/mapa": (context) => const MapaPage(Mapa: ""),
+              "/reserva":(context) => const Reserva()
             },
             theme: ThemeData(
               primaryColor: kPrimaryColor,

@@ -54,6 +54,11 @@ class _PrincipalWidgetState extends State<PrincipalWidget> {
               label: "Ubicación",
               onTap: () => Navigator.pushNamed(context, "/mapa"),
             ),
+            SpeedDialChild(
+              child: const Icon(Icons.calendar_today),
+              label: "Reserva",
+              onTap: () => Navigator.pushNamed(context, "/reserva"),
+            ),
           ],
         ),
         floatingActionButtonLocation:

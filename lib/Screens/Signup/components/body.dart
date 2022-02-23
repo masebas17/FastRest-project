@@ -65,7 +65,7 @@ class _BodyState extends State<Body> {
                 controller: email,
                 decoration: const InputDecoration(
                     icon: Icon(Icons.email, color: kPrimaryColor),
-                    hintText: 'usuario@fatapi.com',
+                    hintText: 'usuario@hotmail.com',
                     labelText: 'Correo electrónico',
                     labelStyle: TextStyle(color: kPrimaryColor)),
               ),
