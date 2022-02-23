@@ -9,6 +9,7 @@ import 'package:fastrest/constants.dart';
 
 
 
+
 class Reserva extends StatefulWidget {
   const Reserva({Key? key}) : super(key: key);
 
@@ -21,6 +22,9 @@ class _ReservaState extends State<Reserva> {
   late DateTime _focusedDay;
   late DateTime _selectedDay;
   CalendarFormat _calendarFormat = CalendarFormat.month;
+  final email = TextEditingController();
+  final person = TextEditingController();
+
 
   @override
   void initState() {
@@ -30,6 +34,7 @@ class _ReservaState extends State<Reserva> {
     _focusedDay=DateTime.now();
     _selectedDay= DateTime.now(); 
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +61,6 @@ class _ReservaState extends State<Reserva> {
       Column(
         children: [
           TableCalendar(
-            
             selectedDayPredicate: (day) => _selectedDay == day,
             onDaySelected: (selectedDay, focusedDay) {
               setState(() {
@@ -74,6 +78,29 @@ class _ReservaState extends State<Reserva> {
             _calendarFormat = format;
              });
             },
+            calendarStyle: const CalendarStyle(
+              isTodayHighlighted: true,
+              selectedDecoration: BoxDecoration(
+                color: Color.fromRGBO(140, 3, 3, 1),
+                shape: BoxShape.rectangle
+              ),
+              todayDecoration: BoxDecoration( 
+                color: Color.fromRGBO(140, 3, 3, 80),
+                shape: BoxShape.rectangle
+              )
+            ),
+            headerStyle: HeaderStyle(
+              formatButtonVisible: true,
+              titleCentered: true,
+              formatButtonShowsNext: false,
+              formatButtonDecoration: BoxDecoration(
+                color: kSecondColor2,
+                borderRadius: BorderRadius.circular(5.0), 
+              ),
+              formatButtonTextStyle: const TextStyle(
+                color: Colors.white,
+              )
+            ),
           ),
            RoundedButton(
               text: "Reserva",
