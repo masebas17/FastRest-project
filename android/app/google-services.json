@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618706444291",
+    "project_id": "fastrest-api",
+    "storage_bucket": "fastrest-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618706444291:android:efec0a7378c25fd319ae36",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618706444291-a9sboja2jthuv7fru8se1kv0pav840vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL1E11FWHAzD7u6TnkGlho4B8p3iAp5E8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618706444291-a9sboja2jthuv7fru8se1kv0pav840vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
